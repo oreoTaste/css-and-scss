@@ -2,10 +2,20 @@
 @import "_variables";
 
 body {
-  // set default setting using "variable"
-  background-color: $bg;
-  font-family: $font;
   color: $color;
+  // use content
+  @include responsive("iphone") {
+    background-color: pink;
+  }
+  @include responsive("iphone-l") {
+    background-color: palevioletred;
+  }
+  @include responsive("tablet") {
+    background-color: burlywood;
+  }
+  @include responsive("tablet-l") {
+    background-color: peru;
+  }
 }
 
 div {
