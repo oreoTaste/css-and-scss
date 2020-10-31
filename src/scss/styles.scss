@@ -1,0 +1,22 @@
+@import "_mixin";
+@import "_variables";
+
+body {
+  // set default setting using "variable"
+  background-color: $bg;
+  font-family: $font;
+  color: $color;
+}
+
+div {
+  // using "extend"
+  @extend %default;
+  // using "nesting"
+  a:nth-child(2n) {
+    // using "mixin"
+    @include setColor(white, small);
+  }
+  a:nth-child(2n + 1) {
+    @include setColor(green, large);
+  }
+}

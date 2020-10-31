@@ -1,0 +1,1 @@
+div{text-decoration:none;font-size:medium;font-weight:700}body{background-color:beige;font-family:sans-serif;color:#000}div a:nth-child(2n){background-color:#fff;text-decoration:none;font-size:small}div a:nth-child(2n+1){background-color:green;text-decoration:none;font-size:large}

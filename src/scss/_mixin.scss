@@ -1,0 +1,17 @@
+// Mixin
+@mixin setColor($color, $name) {
+  background-color: $color;
+  text-decoration: none;
+  @if $name == small {
+    font-size: small;
+  } @else if $name == "large" {
+    font-size: large;
+  }
+}
+
+// Extend
+%default {
+  text-decoration: none;
+  font-size: medium;
+  font-weight: bold;
+}
