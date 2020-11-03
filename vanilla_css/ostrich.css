@@ -1,0 +1,70 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-color: #dde1d4;
+  padding: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.father {
+  font-family: "Times New Roman", Times, serif;
+  width: 80vh;
+  height: 50vh;
+  display: grid;
+  /*  grid-template: 2fr 1fr 1fr/ 2fr 1fr 1fr;*/
+  grid-template:
+    [header-start] "one   one   two  two  " 2fr [header-end]
+    [body-start] "three three four five " 1fr [body-end]
+    [footer-start] "three three six  seven" 1fr [footer-end]
+    / 1fr 1fr 1fr 1fr;
+  box-shadow: 5px 5px 5px gray;
+}
+.father div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120%;
+  font-weight: bold;
+  color: #f44607;
+}
+.father div:nth-child(1) {
+  grid-column: 1 / span 1;
+  background-color: #dae7de;
+  grid-area: one;
+}
+.father div:nth-child(2) {
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 1;
+  background-color: #008a69;
+  color: white;
+  grid-area: two;
+}
+
+.father div:nth-child(3) {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 2;
+  background-color: #f44607;
+  color: white;
+  grid-area: three;
+}
+.father div:nth-child(4) {
+  background-color: #f7abc5;
+  grid-area: four;
+}
+.father div:nth-child(5) {
+  background-color: #5f5fa9;
+  color: white;
+  grid-area: five;
+}
+.father div:nth-child(6) {
+  background-color: #ffc128;
+  grid-area: six;
+}
+.father div:nth-child(7) {
+  background-color: #f97374;
+  color: white;
+  grid-area: seven;
+}
