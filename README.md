@@ -11,6 +11,7 @@
 - album : https://bluprint-1.oreotaste.repl.co/
 - food gallery : https://bluprint-3.oreotaste.repl.co/
 - almost there : https://bluprint-4.oreotaste.repl.co/
+- furniture store : https://furniture-company.oreotaste.repl.co/
 
 ### Introduction :
 
@@ -48,7 +49,10 @@
       <img class="img-item"  height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/almostThere.jpg?raw=true"/><br>
       <h3>almost There</h3>
     </td>
-    <td align="center"></td>
+    <td align="center">
+      <img class="img-item" height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/furnitureStore.jpg?raw=true"/><br>
+      <h3>Furniture Store</h3>
+    </td>
     <td align="center"></td>
   </tr>
 </table>
