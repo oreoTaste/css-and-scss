@@ -6,7 +6,7 @@
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   line-height: 32px;
 }
 
@@ -44,6 +44,7 @@ header {
     }
     nav {
       margin-top: 2em;
+      margin-bottom: 8%;
       line-height: 160%;
       display: flex;
       flex-direction: row;
@@ -97,12 +98,11 @@ main {
 
   section {
     background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, transparent, transparent, transparent, transparent) $red;
-
     padding: 10%;
     .movie__header {
       position: relative;
       @include responsive("small-screen") {
-        padding-bottom: 18px;
+        padding-bottom: 13px;
         display: block;
       }
       @include responsive("large-screen") {
@@ -112,11 +112,11 @@ main {
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: flex-end;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
       }
       .movie__title {
         @include responsive("small-screen") {
-          margin-bottom: 10px;
+          margin-bottom: 5px;
         }
         @include responsive("large-screen") {
           margin: 0;
@@ -124,7 +124,7 @@ main {
         text-transform: uppercase;
       }
       .movie__director {
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-family: RingsideRegularSSm-Book, Blank, Helvetica Neue, Helvetica, sans-serif;
       }
     }
@@ -147,8 +147,10 @@ main {
     footer {
       display: flex;
       justify-content: flex-end;
-      margin-top: 3%;
-      gap: 7px;
+      margin-top: 5%;
+      div {
+        margin-right: 1%;
+      }
     }
   }
 }
