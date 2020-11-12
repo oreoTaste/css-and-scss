@@ -1,1 +1,160 @@
-div{text-decoration:none;font-size:medium;font-weight:700}body{color:#000}@media screen and (min-width:320px) and (max-width:900px){body{background-color:pink}}@media screen and (min-width:320px) and (max-width:900px) and (orientation:landscape){body{background-color:#db7093}}@media screen and (min-width:900px) and (max-width:1120px){body{background-color:#deb887}}@media screen and (min-width:900px) and (max-width:1120px) and (orientation:landscape){body{background-color:peru}}div a:nth-child(2n){background-color:#fff;text-decoration:none;font-size:small}div a:nth-child(2n+1){background-color:green;text-decoration:none;font-size:large}
+* {
+  box-sizing: border-box;
+}
+h2 {
+  font-size: 2.2rem;
+  line-height: 32px;
+}
+body,
+header {
+  background-color: #f0f0f0;
+}
+body {
+  color: #e7473c;
+  margin: 0;
+}
+body .icon {
+  display: flex;
+  justify-content: column;
+}
+header {
+  font-family: RingsideExtraWide-Book, Blank, Helvetica Neue, Helvetica, sans-serif;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+header::-webkit-scrollbar {
+  display: none;
+}
+header h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+header div p:nth-child(1) {
+  font-size: 1.6rem;
+}
+header div p:nth-child(2) {
+  font-size: 100%;
+  text-align: justify;
+  font-weight: 700;
+}
+header div nav {
+  margin-top: 2em;
+  line-height: 160%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header div nav li {
+  display: inline-block;
+  color: #000;
+  text-decoration: underline;
+  cursor: pointer;
+  list-style: none;
+  text-align: justify;
+  opacity: 0.7;
+}
+header div nav li:hover {
+  opacity: 1;
+}
+@media (min-width: 839px) {
+  header {
+    width: 420px;
+    padding: 0 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+  }
+}
+@media (max-width: 839px) {
+  header {
+    display: block;
+    padding: 0 50px 50px;
+  }
+  header nav {
+    -moz-column-gap: 15px;
+    column-gap: 15px;
+  }
+}
+main {
+  height: 500vh;
+  background-color: #e7473c;
+  color: #f0f0f0;
+}
+@media (max-width: 839px) {
+  main {
+    padding-left: 0;
+  }
+}
+@media (min-width: 839px) {
+  main {
+    padding-left: 420px;
+  }
+}
+main section {
+  background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, transparent, transparent, transparent, transparent) #e7473c;
+  padding: 10%;
+}
+main section .movie__header {
+  position: relative;
+}
+@media (max-width: 839px) {
+  main section .movie__header {
+    padding-bottom: 18px;
+    display: block;
+  }
+}
+@media (min-width: 839px) {
+  main section .movie__header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+}
+main section .movie__header .movie__title {
+  text-transform: uppercase;
+}
+@media (max-width: 839px) {
+  main section .movie__header .movie__title {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 839px) {
+  main section .movie__header .movie__title {
+    margin: 0;
+  }
+}
+main section .movie__header .movie__director {
+  font-size: 1.3rem;
+  font-family: RingsideRegularSSm-Book, Blank, Helvetica Neue, Helvetica, sans-serif;
+}
+main section .movie__body {
+  padding-top: 56.25%;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 28px 46px -21px #000, 0 0 37px rgba(0, 0, 0, 0.06), inset 0 0 0 2px rgba(0, 0, 0, 0.2);
+}
+main section .movie__body .movie__poster {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(https://besthorrorscenes.com/posters/55_the-omen.png);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+main section footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3%;
+  gap: 7px;
+}
