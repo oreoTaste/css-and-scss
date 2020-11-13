@@ -4,59 +4,72 @@
 
 ### Summary :
 
-- badReligion : https://badreligion.oreotaste.repl.co/
-- ostrich : https://ostrich.oreotaste.repl.co/
-- forward : https://bluprint.oreotaste.repl.co/
-- frugalTanSpof: https://frugaltanspof.oreotaste.repl.co/
-- album : https://bluprint-1.oreotaste.repl.co/
-- food gallery : https://bluprint-3.oreotaste.repl.co/
-- almost there : https://bluprint-4.oreotaste.repl.co/
-- furniture store : https://furniture-company.oreotaste.repl.co/
-- best horror scenes : https://best-horror-scenes.oreotaste.repl.co/
+- BadReligion : https://badreligion.oreotaste.repl.co/
+- Ostrich : https://ostrich.oreotaste.repl.co/
+- Forward : https://bluprint.oreotaste.repl.co/
+- FrugalTanSpof: https://frugaltanspof.oreotaste.repl.co/
+- Album : https://bluprint-1.oreotaste.repl.co/
+- Food gallery : https://bluprint-3.oreotaste.repl.co/
+- Almost there : https://bluprint-4.oreotaste.repl.co/
+- Furniture store : https://furniture-company.oreotaste.repl.co/
+- Best horror scenes : https://best-horror-scenes.oreotaste.repl.co/
+- Paint box : https://paintbox.oreotaste.repl.co/
 
 ### Introduction :
 
-<table>
-  <tr>
-    <td align="center">
-      <img class="img-item" height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/badReligion.jpg?raw=true"/><br>
-      <h3>bad religion</h3>
-    </td>
-    <td align="center">
-      <img class="img-item" height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/ostrich.jpg?raw=true"/><br>
-      <h3>ostrich</h3>
-    </td>
-    <td align="center">
-      <img class="img-item" height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/forward.jpg?raw=true"/><br>
-      <h3>forward</h3>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img class="img-item" height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/frugaltanspof.jpg?raw=true"/><br>
-      <h3>frugalTanSpof</h3>
-    </td>
-    <td align="center">
-      <img class="img-item" height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/album.jpg?raw=true"/><br>
-      <h3>album</h3>
-    </td>
-    <td align="center">
-      <img class="img-item" height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/foodGallery.jpg?raw=true"/><br>
-      <h3>food galery</h3>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img class="img-item"  height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/almostThere.jpg?raw=true"/><br>
-      <h3>almost There</h3>
-    </td>
-    <td align="center">
-      <img class="img-item" height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/furnitureStore.jpg?raw=true"/><br>
-      <h3>Furniture Store</h3>
-    </td>
-    <td align="center">
-      <img class="img-item" height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/bestHorrorScenes.jpg?raw=true"/><br>
-      <h3>Best Horror Scenes</h3>
-    </td>
-  </tr>
-</table>
+<details>
+  <table>
+    <tr>
+      <td align="center">
+        <img class="img-item" height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/badReligion.jpg?raw=true"/><br>
+        <h3>Bad religion</h3>
+      </td>
+      <td align="center">
+        <img class="img-item" height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/ostrich.jpg?raw=true"/><br>
+        <h3>Ostrich</h3>
+      </td>
+      <td align="center">
+        <img class="img-item" height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/forward.jpg?raw=true"/><br>
+        <h3>Forward</h3>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img class="img-item" height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/frugaltanspof.jpg?raw=true"/><br>
+        <h3>FrugalTanSpof</h3>
+      </td>
+      <td align="center">
+        <img class="img-item" height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/album.jpg?raw=true"/><br>
+        <h3>Album</h3>
+      </td>
+      <td align="center">
+        <img class="img-item" height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/foodGallery.jpg?raw=true"/><br>
+        <h3>Food galery</h3>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img class="img-item"  height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/almostThere.jpg?raw=true"/><br>
+        <h3>Almost There</h3>
+      </td>
+      <td align="center">
+        <img class="img-item" height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/furnitureStore.jpg?raw=true"/><br>
+        <h3>Furniture Store</h3>
+      </td>
+      <td align="center">
+        <img class="img-item" height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/bestHorrorScenes.jpg?raw=true"/><br>
+        <h3>Best Horror Scenes</h3>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img class="img-item"  height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/paintBox.jpg?raw=true"/><br>
+        <h3>Paint Box</h3>
+      </td>
+      <td align="center">
+      </td>
+      <td align="center">
+      </td>
+    </tr>
+  </table>
+</details>
