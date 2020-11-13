@@ -1,11 +1,60 @@
 @mixin responsive($screen-size) {
   @if $screen-size == "small-screen" {
-    @media (max-width: 839px) {
+    @media (max-width: 1023px) {
       @content;
     }
   } @else if $screen-size == "large-screen" {
-    @media (min-width: 839px) {
+    @media (min-width: 1024px) {
       @content;
     }
+  }
+}
+
+%miniTitle {
+  font-family: proxima-nova, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  opacity: 0.7;
+}
+
+@mixin button($bgColor, $fontColor) {
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid $bgColor;
+  padding: 20px 40px;
+  color: $bgColor;
+  &:hover {
+    background: $bgColor;
+    color: $fontColor;
+  }
+}
+
+@mixin small_button_wrapper($bgColor, $fontColor) {
+  display: inline-block;
+  margin-right: -4px;
+  text-decoration: none;
+  color: $bgColor;
+  &:hover {
+    span {
+      background: $bgColor;
+      color: $fontColor;
+    }
+  }
+}
+@mixin small_button($bgColor, $fontColor) {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid $bgColor;
+  color: $bgColor;
+  &:first-child {
+    border-right: 0px;
+    padding: 20px 60px 20px 20px;
+    height: 55px;
+  }
+  &:not(:first-child) {
+    padding: 20px;
+    height: 55px;
   }
 }
