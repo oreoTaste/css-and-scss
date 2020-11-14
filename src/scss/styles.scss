@@ -16,15 +16,29 @@ body {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template:
-    "title_cell empty1     menu_cell" 1fr
-    "tenth      pic_cell   fifth" 2fr
-    "ninth      pic_cell   fourth" 2fr
-    "eighth     pic_cell   third" 2fr
-    "seventh    pic_cell   second" 2fr
-    "sixth      pic_cell   first" 2fr
-    "empty2     text_cell  empty3" 1fr
-    / 47fr 66fr 47fr;
+
+  @include responsive("small-screen") {
+    grid-template:
+      "title_cell empty1  empty1      menu_cell" 1fr
+      "tenth      tenth   fifth       fifth" 2fr
+      "ninth      ninth   fourth      fourth" 2fr
+      "eighth     eighth  third       third" 2fr
+      "seventh    seventh second      second" 2fr
+      "sixth      sixth   first       first" 2fr
+      "empty2     text_cell text_cell  empty3" 1fr
+      /47fr 33fr 33fr 47fr;
+  }
+  @include responsive("large-screen") {
+    grid-template:
+      "title_cell empty1 empty1    menu_cell" 1fr
+      "tenth      pic_cell pic_cell   fifth" 2fr
+      "ninth      pic_cell pic_cell   fourth" 2fr
+      "eighth     pic_cell pic_cell   third" 2fr
+      "seventh    pic_cell pic_cell   second" 2fr
+      "sixth      pic_cell pic_cell   first" 2fr
+      "empty2     text_cell text_cell  empty3" 1fr
+      /47fr 33fr 33fr 47fr;
+  }
   & > * {
     color: $mainColor;
     text-align: center;
@@ -108,7 +122,7 @@ body {
     grid-area: pic_cell;
     overflow: hidden;
     .layout {
-      background: url(http://10x19.co/staging/wp-content/uploads/2019/12/barry-8-600x600.jpg);
+      background: url(../../asset/img/10x19.co/main.jpg);
       background-size: cover;
       width: 100%;
       height: 100%;
