@@ -15,6 +15,7 @@
 - Best horror scenes : https://best-horror-scenes.oreotaste.repl.co/
 - Paint box : https://paintbox.oreotaste.repl.co/
 - 10x19.co : https://10x19co.oreotaste.repl.co/
+- zoo : https://zoo.oreotaste.repl.co/
 
 ### Introduction :
 
@@ -72,6 +73,8 @@
         <h3>10x19.co</h3>
       </td>
       <td align="center">
+        <img class="img-item"  height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/zoo.jpg?raw=true"/><br>
+        <h3>Zoo</h3>
       </td>
     </tr>
   </table>
