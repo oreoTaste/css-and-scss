@@ -1,10 +1,14 @@
 @mixin responsive($screen-size) {
-  @if $screen-size == "small-screen" {
-    @media (max-width: 1023px) {
+  @if $screen-size == "s-screen" {
+    @media (max-width: 450px) {
       @content;
     }
-  } @else if $screen-size == "large-screen" {
-    @media (min-width: 1024px) {
+  } @else if $screen-size == "m-screen" {
+    @media (max-width: 900px) and (min-width: 451px) {
+      @content;
+    }
+  } @else if $screen-size == "l-screen" {
+    @media (min-width: 901px) {
       @content;
     }
   }

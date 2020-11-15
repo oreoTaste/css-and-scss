@@ -5,145 +5,138 @@
   box-sizing: border-box;
 }
 body {
+  font-family: "Union-Regular", Helvetica Neue, Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-}
-.wrapper {
-  position: relative;
-  font-size: 1rem;
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
   display: grid;
-
-  @include responsive("small-screen") {
-    grid-template:
-      "title_cell empty1  empty1      menu_cell" 1fr
-      "tenth      tenth   fifth       fifth" 2fr
-      "ninth      ninth   fourth      fourth" 2fr
-      "eighth     eighth  third       third" 2fr
-      "seventh    seventh second      second" 2fr
-      "sixth      sixth   first       first" 2fr
-      "empty2     text_cell text_cell  empty3" 1fr
-      /47fr 33fr 33fr 47fr;
-  }
-  @include responsive("large-screen") {
-    grid-template:
-      "title_cell empty1 empty1    menu_cell" 1fr
-      "tenth      pic_cell pic_cell   fifth" 2fr
-      "ninth      pic_cell pic_cell   fourth" 2fr
-      "eighth     pic_cell pic_cell   third" 2fr
-      "seventh    pic_cell pic_cell   second" 2fr
-      "sixth      pic_cell pic_cell   first" 2fr
-      "empty2     text_cell text_cell  empty3" 1fr
-      /47fr 33fr 33fr 47fr;
-  }
-  & > * {
-    color: $mainColor;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid $mainColor;
-    border-right: 1px solid $mainColor;
-  }
-  .cell {
-    &:hover {
-      background-color: $mainColor;
-      color: white;
-      transition: background-color 0.3s linear, color 0.3s linear;
-    }
-  }
-  .cell:nth-child(1) {
-    grid-area: first;
-  }
-  .cell:nth-child(2) {
-    grid-area: second;
-  }
-  .cell:nth-child(3) {
-    grid-area: third;
-  }
-  .cell:nth-child(4) {
-    grid-area: fourth;
-  }
-  .cell:nth-child(5) {
-    grid-area: fifth;
-  }
-  .cell:nth-child(6) {
-    grid-area: sixth;
-  }
-  .cell:nth-child(7) {
-    grid-area: seventh;
-  }
-  .cell:nth-child(8) {
-    grid-area: eighth;
-  }
-  .cell:nth-child(9) {
-    grid-area: ninth;
-  }
-  .cell:nth-child(10) {
-    grid-area: tenth;
-  }
-  .menu {
-    grid-area: menu_cell;
-    text-transform: uppercase;
-    &:hover {
-      background-color: $mainColor;
-      color: white;
-      transition: background-color 0.3s linear, color 0.3s linear;
-    }
-  }
-  .title {
-    grid-area: title_cell;
-    svg {
-      width: 50px;
-    }
-  }
-  .text {
-    grid-area: text_cell;
+  grid-template-rows: 1fr;
+  grid-auto-flow: 1fr;
+  img {
     height: 100%;
     width: 100%;
-    overflow: hidden;
-    position: absolute;
-    .content {
-      animation: scrollText 10s linear infinite forwards;
-      white-space: nowrap;
-      height: 100%;
-      width: 100%;
-      text-transform: uppercase;
-      margin-top: -0.5em;
-      top: 50%;
-      line-height: 1;
-      position: relative;
-    }
+    object-fit: cover;
   }
-  .pic {
-    grid-area: pic_cell;
-    overflow: hidden;
-    .layout {
-      background: url(../../asset/img/10x19.co/main.jpg);
-      background-size: cover;
-      width: 100%;
-      height: 100%;
-    }
+  @include responsive("l-screen") {
+    grid-template-columns: repeat(3, 1fr);
   }
-  .empty1 {
-    grid-area: empty1;
+  @include responsive("m-screen") {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .empty2 {
-    grid-area: empty2;
-  }
-  .empty3 {
-    grid-area: empty3;
+  @include responsive("s-screen") {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@keyframes scrollText {
-  0% {
-    transform: translateX(100px);
+header {
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-transform: lowercase;
+  padding: 7px;
+}
+.left {
+  width: 100%;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: lightgray;
+    transition: 0.2s background-color linear;
   }
-  100% {
-    transform: translateX(-1500px);
+
+  @include responsive("l-screen") {
+    grid-column: 1 / span 2;
+  }
+  @include responsive("m-screen") {
+    grid-column: 1 / span 1;
+    .logo {
+      width: 100%;
+    }
+    .content {
+      display: none;
+    }
+  }
+  @include responsive("s-screen") {
+    grid-column: 1 / span 1;
+    .logo {
+      width: 100%;
+    }
+    .content {
+      display: none;
+    }
+  }
+
+  div {
+    display: inline-block;
+    padding-right: 48px;
+  }
+  .content {
+    margin-left: -7px;
+    opacity: 0.3;
+    width: calc(100% - 95px);
+    &:hover {
+      color: white;
+      transition: 0.2s color linear;
+    }
+  }
+  .logo {
+    &:hover {
+      color: white;
+      transition: 0.2s color linear;
+    }
+  }
+}
+.right {
+  width: 100%;
+  white-space: nowrap;
+  &:hover {
+    background-color: lightgray;
+    transition: 0.2s background-color linear;
+  }
+
+  @include responsive("m-screen") {
+    div:first-child {
+      display: none;
+    }
+  }
+  @include responsive("s-screen") {
+    div:first-child {
+      display: none;
+    }
+  }
+
+  div {
+    display: inline-block;
+    margin-right: 16px;
+  }
+  .lang {
+    font-size: 1rem;
+    position: relative;
+    float: right;
+    right: 5px;
+    vertical-align: bottom;
+    top: 10px;
+  }
+}
+
+article {
+  font-weight: 400;
+  size: 0.5rem;
+  text-transform: uppercase;
+  width: 100%;
+  overflow: hidden;
+  @include responsive("s-screen") {
+    grid-column: 1 / span 2;
+  }
+  .title {
+    display: block;
+    padding: 0 5%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 1rem;
+    height: 100%;
+    margin-bottom: 1%;
+    span {
+      width: 100%;
+      white-space: nowrap;
+    }
   }
 }
