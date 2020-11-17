@@ -1,15 +1,23 @@
 @mixin responsive($screen-size) {
   @if $screen-size == "s-screen" {
-    @media (max-width: 450px) {
-      @content;
-    }
-  } @else if $screen-size == "m-screen" {
-    @media (max-width: 900px) and (min-width: 451px) {
+    @media (max-width: 800px) {
       @content;
     }
   } @else if $screen-size == "l-screen" {
-    @media (min-width: 901px) {
+    @media (min-width: 800px) {
       @content;
     }
+  }
+}
+
+%button_style {
+  @include responsive("l-screen") {
+    font-size: $btn_fontSize;
+    padding: 10px 25px;
+  }
+  @include responsive("s-screen") {
+    font-size: $s_btn_fontSize;
+    padding: 5px 10px;
+    min-width: max-content;
   }
 }

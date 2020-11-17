@@ -15,7 +15,8 @@
 - Best horror scenes : https://best-horror-scenes.oreotaste.repl.co/
 - Paint box : https://paintbox.oreotaste.repl.co/
 - 10x19.co : https://10x19co.oreotaste.repl.co/
-- zoo : https://zoo.oreotaste.repl.co/
+- Zoo : https://zoo.oreotaste.repl.co/
+- Schwartz : https://schwartz.oreotaste.repl.co/
 
 ### Introduction :
 
@@ -77,5 +78,15 @@
         <h3>Zoo</h3>
       </td>
     </tr>
-  </table>
+    <tr>
+      <td align="center">
+        <img class="img-item"  height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/schwartz.jpg?raw=true"/><br>
+        <h3>Schwartz</h3>
+      </td>
+      <td align="center">
+      </td>
+      <td align="center">
+      </td>
+    </tr>
+    </table>
 </details>
