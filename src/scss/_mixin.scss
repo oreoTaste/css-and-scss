@@ -10,14 +10,17 @@
   }
 }
 
-%button_style {
-  @include responsive("l-screen") {
-    font-size: $btn_fontSize;
-    padding: 10px 25px;
+%center {
+  background-color: #efcb56;
+  text-align: center;
+  padding: 10% 20%;
+  h1 {
+    margin-bottom: 1rem;
   }
-  @include responsive("s-screen") {
-    font-size: $s_btn_fontSize;
-    padding: 5px 10px;
-    min-width: max-content;
+  h2 {
+    font-weight: normal;
+    margin-bottom: 2rem;
+    line-height: 140%;
+    font-size: $fontSize3;
   }
 }
