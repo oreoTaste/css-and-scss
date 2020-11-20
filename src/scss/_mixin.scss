@@ -1,26 +1,15 @@
 @mixin responsive($screen-size) {
   @if $screen-size == "s-screen" {
-    @media (max-width: 800px) {
+    @media (max-width: 700px) {
+      @content;
+    }
+  } @else if $screen-size == "m-screen" {
+    @media (min-width: 701px) and (max-width: 1024px) {
       @content;
     }
   } @else if $screen-size == "l-screen" {
-    @media (min-width: 800px) {
+    @media (min-width: 1025px) {
       @content;
     }
-  }
-}
-
-%center {
-  background-color: #efcb56;
-  text-align: center;
-  padding: 10% 20%;
-  h1 {
-    margin-bottom: 1rem;
-  }
-  h2 {
-    font-weight: normal;
-    margin-bottom: 2rem;
-    line-height: 140%;
-    font-size: $fontSize3;
   }
 }

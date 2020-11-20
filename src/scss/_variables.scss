@@ -1,7 +1,17 @@
+$l-leftColumn: 25%;
+$l-rightColumn: 75%;
+$l-margin-left: calc(25% + 0.6rem);
+$l-width: calc(75% - 0.6rem);
+
+$m-leftColumn: 33.33%;
+$m-rightColumn: 66.66%;
+$m-margin-left: calc(33.33% + 0.6rem);
+$m-width: calc(66.66% - 0.6rem);
+
 $fontSize0: 2.5rem;
 $fontSize1: 2rem;
 $fontSize2: 1.8rem;
 $fontSize3: 1.6rem;
 $fontSize4: 1.2rem;
 $fontSize5: 1rem;
-$fontSize6: 0.5rem;
+$fontSize6: 0.8rem;

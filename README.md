@@ -18,6 +18,7 @@
 - Zoo : https://zoo.oreotaste.repl.co/
 - Schwartz : https://schwartz.oreotaste.repl.co/
 - Tolv : https://tolv.oreotaste.repl.co/
+- Rodic Davidson : https://rodicDavidson.oreotaste.repl.co/
 
 ### Introduction :
 
@@ -89,6 +90,8 @@
         <h3>Tolv</h3>
       </td>
       <td align="center">
+        <img class="img-item"  height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/rodicDavidson.jpg?raw=true"/><br>
+        <h3>Rodic Davidson</h3>
       </td>
     </tr>
     </table>
