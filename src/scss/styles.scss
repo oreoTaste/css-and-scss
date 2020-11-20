@@ -37,6 +37,7 @@ body {
       .left {
         position: absolute;
         left: 0;
+        top: 10px;
         div {
           margin-right: 0.5rem;
         }
@@ -47,12 +48,13 @@ body {
         font-weight: 900;
         text-transform: capitalize;
         font-family: -webkit-pictograph;
-        font-size: $fontSize2;
+        font-size: $fontSize0;
         margin-top: -5px;
       }
       .right {
         position: absolute;
         right: 0;
+        top: 10px;
       }
     }
   }
@@ -69,7 +71,7 @@ body {
       float: left;
       img {
         display: inline-block;
-        width: auto;
+        width: 100%;
         height: 100vh;
         object-fit: cover;
       }
@@ -84,19 +86,20 @@ body {
         background: white;
         position: sticky;
         height: 100vh;
-        padding: 55% 15%;
+        padding: calc(40vh) 15%;
         z-index: -1;
         top: 0;
+        vertical-align: middle;
 
         &.hidden {
           opacity: 0;
         }
 
         h1 {
-          font-size: $fontSize1;
+          font-size: calc(3vw);
         }
         p {
-          font-size: $fontSize6;
+          font-size: calc(1vw);
           white-space: nowrap;
         }
       }
@@ -115,41 +118,51 @@ body {
   .grid {
     background-color: white;
     width: 100%;
-    height: 130vh;
+    height: 100vh;
+    min-height: -webkit-fill-available;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 1px;
     padding: 1px;
-    img {
+    overflow: hidden;
+    div {
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      &:hover {
-        filter: blur(50px);
-        opacity: 0.5;
-        transition: 0.3s filter linear, 0.3s opacity linear;
-      }
-    }
-    img:nth-child(7),
-    img:nth-child(1) {
-      grid-column: 1 / span 2;
-    }
+      overflow: hidden;
 
-    img:nth-child(5) {
-      grid-column: 2 / span 2;
-    }
-    img:nth-child(10) {
-      grid-column: 1 / span 2;
+      &:nth-child(7),
+      &:nth-child(1) {
+        grid-column: 1 / span 2;
+      }
+
+      &:nth-child(5) {
+        grid-column: 2 / span 2;
+      }
+      &:nth-child(10) {
+        grid-column: 1 / span 2;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        &:hover {
+          filter: blur(50px);
+          opacity: 0.5;
+          transition: 0.3s filter linear, 0.3s opacity linear;
+        }
+      }
     }
   }
 }
 
 footer {
   width: 100%;
-  padding: 15%;
+  padding: 5% 8% 5% 12%;
   font-size: 0;
   background-color: #535851;
+  display: block;
   .wrapper {
     color: white;
     width: 100%;
@@ -157,7 +170,7 @@ footer {
     .column {
       vertical-align: top;
       display: inline-block;
-      font-size: 0.8rem;
+      font-size: 1rem;
       width: 25%;
       line-height: 180%;
       header {
