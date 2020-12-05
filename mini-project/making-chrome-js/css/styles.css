@@ -1,0 +1,162 @@
+:root {
+  --h2-size: 1.2rem;
+  --padding-size: 1rem;
+  --time-size: 6rem;
+  --weather-size: 1rem;
+  --greeting-size: 1rem;
+}
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: var(--h2-size);
+  text-shadow: 1px 1px 5px white;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: black;
+  margin: 0;
+  text-shadow: 1px 1px 5px white, 2px 2px 5px black, -1px -1px 5px white,
+    -2px -2px 5px black;
+}
+.infos {
+  position: absolute;
+  flex-direction: column;
+  font-weight: 600;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weather {
+  font-size: var(--weather-size);
+  font-weight: 600;
+}
+
+.current-time {
+  font-size: var(--time-size);
+  font-weight: 600;
+}
+.user-name {
+  width: 100%;
+}
+.user .content {
+  text-align: center;
+  font-size: var(--greeting-size);
+  font-weight: 600;
+}
+.animation {
+  text-align: end !important;
+  animation: 30s rightToLeft linear infinite;
+}
+
+@keyframes rightToLeft {
+  0% {
+    transform: translate(-15%, 0px);
+  }
+  50% {
+    transform: translate(-60%, 0px);
+  }
+  100% {
+    transform: translate(-15%, 0px);
+  }
+}
+.dave {
+  width: 50vw;
+  height: 2rem;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  text-align: center;
+  max-width: 22rem;
+  margin: 1rem;
+}
+
+article {
+  bottom: 5%;
+  position: absolute;
+  width: 100%;
+  height: 35%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  left: 25%;
+  text-align: center;
+}
+.tasks {
+  border-radius: 2rem 2rem 0 0;
+  width: 100%;
+  padding: var(--padding-size);
+  background-color: rgba(255, 235, 218, 0.5);
+  display: flex;
+  align-items: center;
+  height: 4.2rem;
+}
+.tasks h1 {
+  margin-right: 2%;
+  font-size: var(--h2-size);
+}
+.tasks input {
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  height: fit-content;
+}
+.tasks input::placeholder {
+  text-align: center;
+}
+.pending h1,
+.finished h1 {
+  margin-bottom: 1rem;
+  font-size: var(--h2-size);
+}
+.pending div,
+.finished div {
+  margin-bottom: 0.5rem;
+}
+.pending div button,
+.finished div button {
+  margin-left: 0.5rem;
+}
+.pending,
+.finished {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  padding: var(--padding-size);
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 50%;
+  display: inline-block;
+  height: calc(100% - 4.2rem);
+  overflow-y: scroll;
+}
+.pending::-webkit-scrollbar,
+.finished::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+.pending {
+  border-radius: 0 0 0 2rem;
+  border-right: 1px dashed rgba(255, 255, 255, 0.5);
+}
+.finished {
+  border-radius: 0 0 2rem 0;
+}
+
+.background {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hidden {
+  display: none;
+}

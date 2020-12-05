@@ -6,23 +6,29 @@
   "author": "Youngkuk Sohn <youngkuk.sohn@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "@babel/register": "^7.4.4",
-    "del": "^4.1.1",
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/register": "^7.12.1",
+    "del": "^6.0.0",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^6.1.0",
-    "gulp-csso": "^3.0.1",
-    "gulp-sass": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^4.1.0",
     "jquery": "^3.5.1",
-    "node-sass": "^4.12.0"
+    "node-sass": "^5.0.0"
   },
   "scripts": {
-    "dev": "gulp dev"
+    "dev": "gulp dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "browsers": [
       "last 2 versions"
     ]
-  }
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  },
+  "homepage": "https://oreoTaste.github.io/css-and-scss/"
 }
