@@ -20,6 +20,7 @@
 - Tolv : https://tolv.oreotaste.repl.co/
 - Rodic Davidson : https://rodicDavidson.oreotaste.repl.co/
 - Beige : https://beige.oreotaste.repl.co/
+- Making Chrome w/ js : https://oreotaste.github.io/css-and-scss/
 
 ### Introduction :
 
@@ -101,6 +102,8 @@
         <h3>Beige</h3>
       </td>
       <td align="center">
+        <img class="img-item"  height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/making-chrome-js.jpg?raw=true"/><br>
+        <h3>Making Chrome JS</h3>
       </td>
       <td align="center">
       </td>
