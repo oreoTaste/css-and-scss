@@ -19,6 +19,7 @@
 - Schwartz : https://schwartz.oreotaste.repl.co/
 - Tolv : https://tolv.oreotaste.repl.co/
 - Rodic Davidson : https://rodicDavidson.oreotaste.repl.co/
+- Beige : https://beige.oreotaste.repl.co/
 
 ### Introduction :
 
@@ -92,6 +93,16 @@
       <td align="center">
         <img class="img-item"  height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/rodicDavidson.jpg?raw=true"/><br>
         <h3>Rodic Davidson</h3>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img class="img-item"  height="200px" src="https://github.com/oreoTaste/css-and-scss/blob/master/asset/img/beige.jpg?raw=true"/><br>
+        <h3>Beige</h3>
+      </td>
+      <td align="center">
+      </td>
+      <td align="center">
       </td>
     </tr>
     </table>
